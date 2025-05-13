@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://assets.nflxext.com/ffe/siteui/vlv3/9d3533b2-0e2b-40b2-95e0-ecd7979cc88b/2b0bfda4-60c1-4e48-9e86-0da0e0b967d7/BR-pt-20240311-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    background-size: cover;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 60px 68px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.login-box h1 {
+    margin-bottom: 28px;
+    font-size: 32px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 16px 20px 0;
+    height: 50px;
+    background: #333;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #8c8c8c;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: 15px;
+    font-size: 11px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 16px;
+    margin: 24px 0 12px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.remember-help {
+    display: flex;
+    justify-content: space-between;
+    color: #b3b3b3;
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+
+.remember-help a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.remember-help a:hover {
+    text-decoration: underline;
+}
+
+.signup-link {
+    color: #737373;
+}
+
+.signup-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
