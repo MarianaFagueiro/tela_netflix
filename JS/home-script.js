@@ -58,3 +58,4 @@ window.addEventListener('load', function() {
         document.querySelector('.hero-image').style.opacity = 1;
     };
 });
+
