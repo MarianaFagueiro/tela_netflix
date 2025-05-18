@@ -5,335 +5,289 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="CSS/home-styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <body>
-    <div class="navbar">
-        <div class="logo">
-            <span>NETFLIX</span>
-        </div>
-        <div class="menu">
-            <a href="#" class="active">Início</a>
-            <a href="#">Séries</a>
-            <a href="#">Filmes</a>
-            <a href="#">Bombando</a>
-            <a href="#">Minha lista</a>
-        </div>
-        <div class="user-menu">
-            <input type="text" placeholder="Títulos, gente e gêneros">
-            <img src="images/lupe.png" alt="Banner Lupan" class="profile">
-        </div>
-    </div>
-
-    <div class="hero">
-        <div class="hero-image">
-            <img src="images/banner.jpg" alt="Lupan">
-        </div> 
-        <div class="hero-info">
-            <h1>Conclave</h1>
-            <h2>Com a morte do Papa, o cardeal Lawrence reúne um grupo de sacerdotes para eleger seu sucessor. Cercado por líderes do mundo todo nos corredores do Vaticano, ele descobre uma trilha de segredos profundos que podem abalar a própria fundação da Igreja.</h2>
-            <div class="hero-buttons">
-                <button class="play-btn">▶ Assistir</button>
-                <button class="info-btn">ⓘ Mais informações</button>
+        <div class="navbar">
+            <div class="logo">
+                <span>NETFLIX</span>
+            </div>
+            <div class="menu">
+                <a href="#" class="active">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Bombando</a>
+                <a href="#">Minha lista</a>
+            </div>
+            <div class="user-menu">
+                <input type="text" placeholder="Títulos, gente e gêneros">
+                <img src="images/lupe.png" alt="Perfil" class="profile">
             </div>
         </div>
-    </div>
-
-    <div class="content">
-        <section class="carousel-section">
-            <h2 class="carousel-title">Continuar assistindo</h2>
-            <div class="carousel-container">
-                <button class="carousel-arrow left-arrow" aria-label="Anterior">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="carousel">
-                    <div class="carousel-item">
-                        <div class="carousel-box">
-                            <img src="images/carrosel1.jpg" alt="Adolecencia">
-                            <div class="carousel-box-hover">
-                                <div class="box-info">
-                                    <div class="match">98% compatível</div>
-                                    <div class="buttons">
-                                        <button class="play-btn"><i class="fas fa-play"></i></button>
-                                        <button class="info-btn"><i class="fas fa-info-circle"></i></button>
-                                    </div>
-                                    <div class="tags">
-                                        <span>Drama</span>
-                                        <span>Psicologico</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="carousel-box">
-                            <img src="images/carrosel2.jpeg" alt="House">
-                            <div class="carousel-box-hover">
-                                <div class="box-info">
-                                    <div class="match">95% compatível</div>
-                                    <div class="buttons">
-                                        <button class="play-btn"><i class="fas fa-play"></i></button>
-                                        <button class="info-btn"><i class="fas fa-info-circle"></i></button>
-                                    </div>
-                                    <div class="tags">
-                                        <span>Drama</span>
-                                        <span>Drama médico</span>
-                                        <span>Aventura</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="carousel-box">
-                            <img src="images/carrosel3.jpg" alt="A Lista Da Minha Vida">
-                            <div class="carousel-box-hover">
-                                <div class="box-info">
-                                    <div class="match">95% compatível</div>
-                                    <div class="buttons">
-                                        <button class="play-btn"><i class="fas fa-play"></i></button>
-                                        <button class="info-btn"><i class="fas fa-info-circle"></i></button>
-                                    </div>
-                                    <div class="tags">
-                                        <span>Romance</span>
-                                        <span>Comédia</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="carousel-box">
-                            <img src="images/carrosel4.jpg" alt="Conclave">
-                            <div class="carousel-box-hover">
-                                <div class="box-info">
-                                    <div class="match">95% compatível</div>
-                                    <div class="buttons">
-                                        <button class="play-btn"><i class="fas fa-play"></i></button>
-                                        <button class="info-btn"><i class="fas fa-info-circle"></i></button>
-                                    </div>
-                                    <div class="tags">
-                                        <span>Religião</span>
-                                        <span>Drama</span>
-                                        <span>Aventura</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="carousel-box">
-                            <img src="images/carrosel5.jpg" alt="Você">
-                            <div class="carousel-box-hover">
-                                <div class="box-info">
-                                    <div class="match">95% compatível</div>
-                                    <div class="buttons">
-                                        <button class="play-btn"><i class="fas fa-play"></i></button>
-                                        <button class="info-btn"><i class="fas fa-info-circle"></i></button>
-                                    </div>
-                                    <div class="tags">
-                                        <span>Drama</span>
-                                        <span>Suspense</span>
-                                        <span>Psicológico</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="carousel-box">
-                            <img src="images/carrosel6.jpeg" alt="Má Influência">
-                            <div class="carousel-box-hover">
-                                <div class="box-info">
-                                    <div class="match">95% compatível</div>
-                                    <div class="buttons">
-                                        <button class="play-btn"><i class="fas fa-play"></i></button>
-                                        <button class="info-btn"><i class="fas fa-info-circle"></i></button>
-                                    </div>
-                                    <div class="tags">
-                                        <span>Drama</span>
-                                        <span>Suspense</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="carousel-box">
-                            <img src="images/carrosel7.jpeg" alt="House">
-                            <div class="carousel-box-hover">
-                                <div class="box-info">
-                                    <div class="match">95% compatível</div>
-                                    <div class="buttons">
-                                        <button class="play-btn"><i class="fas fa-play"></i></button>
-                                        <button class="info-btn"><i class="fas fa-info-circle"></i></button>
-                                    </div>
-                                    <div class="tags">
-                                        <span>Drama</span>
-                                        <span>Drama médico</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="carousel-box">
-                            <img src="images/carrosel8.jpeg" alt="House">
-                            <div class="carousel-box-hover">
-                                <div class="box-info">
-                                    <div class="match">95% compatível</div>
-                                    <div class="buttons">
-                                        <button class="play-btn"><i class="fas fa-play"></i></button>
-                                        <button class="info-btn"><i class="fas fa-info-circle"></i></button>
-                                    </div>
-                                    <div class="tags">
-                                        <span>Drama</span>
-                                        <span>Drama médico</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="carousel-box">
-                            <img src="images/carrosel9.jpg" alt="House">
-                            <div class="carousel-box-hover">
-                                <div class="box-info">
-                                    <div class="match">95% compatível</div>
-                                    <div class="buttons">
-                                        <button class="play-btn"><i class="fas fa-play"></i></button>
-                                        <button class="info-btn"><i class="fas fa-info-circle"></i></button>
-                                    </div>
-                                    <div class="tags">
-                                        <span>Drama</span>
-                                        <span>Drama médico</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="carousel-box">
-                            <img src="images/carrosel10.jpg" alt="House">
-                            <div class="carousel-box-hover">
-                                <div class="box-info">
-                                    <div class="match">95% compatível</div>
-                                    <div class="buttons">
-                                        <button class="play-btn"><i class="fas fa-play"></i></button>
-                                        <button class="info-btn"><i class="fas fa-info-circle"></i></button>
-                                    </div>
-                                    <div class="tags">
-                                        <span>Drama</span>
-                                        <span>Drama médico</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    
+        <div class="hero">
+            <div class="hero-image">
+                <img src="images/banner.jpg" alt="Conclave">
+            </div> 
+            <div class="hero-info">
+                <h1>Conclave</h1>
+                <h2>Com a morte do Papa, o cardeal Lawrence reúne um grupo de sacerdotes para eleger seu sucessor. Cercado por líderes do mundo todo nos corredores do Vaticano, ele descobre uma trilha de segredos profundos que podem abalar a própria fundação da Igreja.</h2>
+                <div class="hero-buttons">
+                    <button class="play-btn"><i class="fas fa-play"></i> Assistir</button>
+                    <button class="info-btn"><i class="fas fa-info-circle"></i> Mais informações</button>
                 </div>
-                <button class="carousel-arrow right-arrow" aria-label="Próximo">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
             </div>
-        </section>
-    </div>
-
-        <!-- Carrossel 2 - Populares na Netflix -->
-        <section class="carousel-section">
-            <h2 class="carousel-title">Populares na Netflix</h2>
-            <div class="carousel-container">
-                <button class="carousel-arrow left-arrow" aria-label="Anterior">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="carousel">
-                    <div class="carousel-item">
-                        <div class="carousel-box">
-                            <img src="https://image.tmdb.org/t/p/w300/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg" alt="Vikings: Valhalla">
-                            <div class="carousel-box-hover">
-                                <div class="box-info">
-                                    <div class="match">94% compatível</div>
-                                    <div class="buttons">
-                                        <button class="play-btn"><i class="fas fa-play"></i></button>
-                                        <button class="info-btn"><i class="fas fa-info-circle"></i></button>
-                                    </div>
-                                    <div class="tags">
-                                        <span>Ação</span>
-                                        <span>Histórico</span>
-                                        <span>Drama</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        </div>
+    
+        <h2 class="netflix-row-title">Filmes Populares</h2>
+        <div class="netflix-carousel">
+            <h2>Populares na Netflix</h2>
+            <div id="netflixCarousel1" class="carousel slide" data-bs-interval="false" data-bs-touch="false">
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="netflix-row">
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/160/240" alt="Filme 1">
                     </div>
-                    <!-- Mais itens do carrossel -->
-                </div>
-                <button class="carousel-arrow right-arrow" aria-label="Próximo">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-        </section>
-
-        <!-- Carrossel 3 - Em alta -->
-        <section class="carousel-section">
-            <h2 class="carousel-title">Em alta</h2>
-            <div class="carousel-container">
-                <button class="carousel-arrow left-arrow" aria-label="Anterior">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="carousel">
-                    <div class="carousel-item">
-                        <div class="carousel-box">
-                            <img src="https://image.tmdb.org/t/p/w300/1uegRjqllV6DL1F7OeW5dYaYhlt.jpg" alt="The Sandman">
-                            <div class="carousel-box-hover">
-                                <div class="box-info">
-                                    <div class="match">97% compatível</div>
-                                    <div class="buttons">
-                                        <button class="play-btn"><i class="fas fa-play"></i></button>
-                                        <button class="info-btn"><i class="fas fa-info-circle"></i></button>
-                                    </div>
-                                    <div class="tags">
-                                        <span>Fantasia</span>
-                                        <span>Drama</span>
-                                        <span>Suspense</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/190/280" alt="Filme 2">
                     </div>
-                    <!-- Mais itens do carrossel -->
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 3">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 4">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 5">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 6">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 7">
+                    </div>
+                  </div>
                 </div>
-                <button class="carousel-arrow right-arrow" aria-label="Próximo">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="netflix-row">
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 8">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 9">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 10">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 11">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 12">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 13">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 14">
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                  <div class="netflix-row">
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 15">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 16">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 17">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 18">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 19">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 20">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Filme 21">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#netflixCarousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#netflixCarousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
             </div>
-        </section>
-    </div>
-
-    <div class="footer">
-        <div class="social-links">
-            <a href="#"><img src="https://i.imgur.com/1bX5QH6.png" alt="Facebook"></a>
-            <a href="#"><img src="https://i.imgur.com/1bX5QH6.png" alt="Instagram"></a>
-            <a href="#"><img src="https://i.imgur.com/1bX5QH6.png" alt="Twitter"></a>
+          </div>
+      
+          <!-- Carrossel 2 -->
+          <div class="netflix-carousel">
+            <h2>Séries em alta</h2>
+            <div id="netflixCarousel2" class="carousel slide" data-bs-interval="false" data-bs-touch="false">
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="netflix-row">
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Série 1">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Série 2">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Série 3">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Série 4">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Série 5">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Série 6">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Série 7">
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="netflix-row">
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Série 8">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Série 9">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Série 10">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Série 11">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Série 12">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Série 13">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Série 14">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#netflixCarousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#netflixCarousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+            </div>
+          </div>
+      
+          <!-- Carrossel 3 -->
+          <div class="netflix-carousel">
+            <h2>Documentários</h2>
+            <div id="netflixCarousel3" class="carousel slide" data-bs-interval="false" data-bs-touch="false">
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="netflix-row">
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Documentário 1">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Documentário 2">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Documentário 3">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Documentário 4">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Documentário 5">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Documentário 6">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Documentário 7">
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="netflix-row">
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Documentário 8">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Documentário 9">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Documentário 10">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Documentário 11">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Documentário 12">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Documentário 13">
+                    </div>
+                    <div class="netflix-item">
+                      <img src="/api/placeholder/270/180" alt="Documentário 14">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#netflixCarousel3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#netflixCarousel3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="footer-links">
-            <a href="#">Termos de Uso</a>
-            <a href="#">Política de Privacidade</a>
-            <a href="#">Preferências de cookies</a>
-            <a href="#">Informações corporativas</a>
+      
+        <div class="footer">
+            <div class="social-links">
+                <a href="#"><img src="https://i.imgur.com/1bX5QH6.png" alt="Facebook"></a>
+                <a href="#"><img src="https://i.imgur.com/1bX5QH6.png" alt="Instagram"></a>
+                <a href="#"><img src="https://i.imgur.com/1bX5QH6.png" alt="Twitter"></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Preferências de cookies</a>
+                <a href="#">Informações corporativas</a>
+            </div>
+            <div class="copyright">
+                <p>© 2025 NETFLIX </p>
+            </div>
         </div>
-        <div class="copyright">
-            <p>© 2025 NÉTEL - LABRAQUE NOVAS SONHOR A O ARBALTO</p>
-        </div>
-    </div>
-
-    <script src="home-script.js"></script>
-</body>
-</html>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
