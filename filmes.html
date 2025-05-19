@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Séries</title>
+    <link rel="stylesheet" href="/CSS/nav_links.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">NETFLIX</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="series.html">Séries</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="true" href="filmes.html">Filmes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="true" href="bombando.html">Em alta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="true" href="lista.html">Minha lista</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Títulos e genêros" aria-label="Search"/>
+              <img src="images/lupe.png" alt="Perfil" class="profile">
+            </form>
+          </div>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="hero-image">
+            <img src="images/carrosel6.jpeg" alt="Conclave">
+        </div> 
+        <div class="hero-info">
+            <h1>Adolecência</h1>
+            <h2>Um garoto de 13 anos é acusado de assassinar uma colega de escola, levando a família, a terapeuta e o investigador do caso a se perguntarem: o que realmente aconteceu.</h2>
+                <button class="play-btn"><i class="fas fa-play"></i> Assistir</button>
+                <button class="info-btn"><i class="fas fa-info-circle"></i> Mais informações</button>
+            </div>
+        </div>
+    </div>
+    <div class="netflix-carousel">
+        <h2>Filmes</h2>
+        <div id="netflixCarousel1" class="carousel slide" data-bs-interval="false" data-bs-touch="false">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="netflix-row" style="margin-left: 100px;">
+                <div class="netflix-item">
+                  <img src="images/carrosel1.jpg" alt="Filme 1">
+                </div>
+                <div class="netflix-item">
+                  <img src="images/carrosel2.jpeg" alt="Filme 2">
+                </div>
+                <div class="netflix-item">
+                  <img src="images/carrosel3.jpg" alt="Filme 3">
+                </div>
+                <div class="netflix-item">
+                  <img src="images/carrosel4.jpg" alt="Filme 4">
+                </div>
+                <div class="netflix-item">
+                  <img src="images/carrosel5.jpg" alt="Filme 5">
+                </div>
+                <div class="netflix-item">
+                  <img src="images/carrosel6.jpeg" alt="Filme 6">
+                </div>
+                <div class="netflix-item">
+                  <img src="images/carrosel7.jpeg" alt="Filme 7">
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="netflix-row" style="margin-left: 100px;">
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Filme 8">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Filme 9">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Filme 10">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Filme 11">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Filme 12">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Filme 13">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Filme 14">
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="netflix-row" style="margin-left: 100px;">
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Filme 15">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Filme 16">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Filme 17">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Filme 18">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Filme 19">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Filme 20">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Filme 21">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#netflixCarousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#netflixCarousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+  
+      <!-- Carrossel 2 -->
+      <div class="netflix-carousel">
+        <h2>Filmes em alta</h2>
+        <div id="netflixCarousel2" class="carousel slide" data-bs-interval="false" data-bs-touch="false">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="netflix-row" style="margin-left: 100px;">
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Série 1">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Série 2">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Série 3">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Série 4">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Série 5">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Série 6">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Série 7">
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="netflix-row" style="margin-left: 100px;">
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Série 8">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Série 9">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Série 10">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Série 11">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Série 12">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Série 13">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Série 14">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#netflixCarousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#netflixCarousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+  
+      <!-- Carrossel 3 -->
+      <div class="netflix-carousel">
+        <h2>Recomendações para você</h2> 
+        <div id="netflixCarousel3" class="carousel slide" data-bs-interval="false" data-bs-touch="false">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="netflix-row" style="margin-left: 100px;">
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Documentário 1">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Documentário 2">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Documentário 3">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Documentário 4">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Documentário 5">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Documentário 6">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Documentário 7">
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="netflix-row" style="margin-left: 100px;">
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Documentário 8">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Documentário 9">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Documentário 10">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Documentário 11">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Documentário 12">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Documentário 13">
+                </div>
+                <div class="netflix-item">
+                  <img src="/api/placeholder/270/180" alt="Documentário 14">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#netflixCarousel3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#netflixCarousel3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-links">
+            <a href="#">Termos de Uso</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Preferências de cookies</a>
+            <a href="#">Informações corporativas</a>
+        </div>
+        <div class="copyright">
+            <p>© 2025 NETFLIX </p>
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
