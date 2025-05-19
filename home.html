@@ -7,21 +7,38 @@
     <link rel="stylesheet" href="CSS/home-styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <body>
-        <div class="navbar">
-            <div class="logo">
-                <span>NETFLIX</span>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">NETFLIX</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Início</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Séries</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="true">Filmes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="true">Bombando</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="true">Minha lista</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Títulos e genêros" aria-label="Search"/>
+                  <img src="images/lupe.png" alt="Perfil" class="profile">
+                </form>
+              </div>
             </div>
-            <div class="menu">
-                <a href="#" class="active">Início</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Bombando</a>
-                <a href="#">Minha lista</a>
-            </div>
-            <div class="user-menu">
-                <input type="text" placeholder="Títulos, gente e gêneros">
-                <img src="images/lupe.png" alt="Perfil" class="profile">
-            </div>
+          </nav>
         </div>
     
         <div class="hero">
@@ -38,25 +55,24 @@
             </div>
         </div>
     
-        <h2 class="netflix-row-title">Filmes Populares</h2>
         <div class="netflix-carousel">
             <h2>Populares na Netflix</h2>
             <div id="netflixCarousel1" class="carousel slide" data-bs-interval="false" data-bs-touch="false">
               <div class="carousel-inner">
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
-                  <div class="netflix-row">
+                  <div class="netflix-row" style="margin-left: 100px;">
                     <div class="netflix-item">
-                      <img src="/api/placeholder/160/240" alt="Filme 1">
+                      <img src="images/carrosel1.jpg" alt="Filme 1">
                     </div>
                     <div class="netflix-item">
-                      <img src="/api/placeholder/190/280" alt="Filme 2">
+                      <img src="images/carrosel2.jpeg" alt="Filme 2">
                     </div>
                     <div class="netflix-item">
-                      <img src="/api/placeholder/270/180" alt="Filme 3">
+                      <img src="images/carrosel3.jpg" alt="Filme 3">
                     </div>
                     <div class="netflix-item">
-                      <img src="/api/placeholder/270/180" alt="Filme 4">
+                      <img src="images/carrosel4.jpg" alt="Filme 4">
                     </div>
                     <div class="netflix-item">
                       <img src="/api/placeholder/270/180" alt="Filme 5">
@@ -71,7 +87,7 @@
                 </div>
                 <!-- Slide 2 -->
                 <div class="carousel-item">
-                  <div class="netflix-row">
+                  <div class="netflix-row" style="margin-left: 100px;">
                     <div class="netflix-item">
                       <img src="/api/placeholder/270/180" alt="Filme 8">
                     </div>
@@ -97,7 +113,7 @@
                 </div>
                 <!-- Slide 3 -->
                 <div class="carousel-item">
-                  <div class="netflix-row">
+                  <div class="netflix-row" style="margin-left: 100px;">
                     <div class="netflix-item">
                       <img src="/api/placeholder/270/180" alt="Filme 15">
                     </div>
@@ -140,7 +156,7 @@
               <div class="carousel-inner">
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
-                  <div class="netflix-row">
+                  <div class="netflix-row" style="margin-left: 100px;">
                     <div class="netflix-item">
                       <img src="/api/placeholder/270/180" alt="Série 1">
                     </div>
@@ -166,7 +182,7 @@
                 </div>
                 <!-- Slide 2 -->
                 <div class="carousel-item">
-                  <div class="netflix-row">
+                  <div class="netflix-row" style="margin-left: 100px;">
                     <div class="netflix-item">
                       <img src="/api/placeholder/270/180" alt="Série 8">
                     </div>
@@ -204,12 +220,12 @@
       
           <!-- Carrossel 3 -->
           <div class="netflix-carousel">
-            <h2>Documentários</h2>
+            <h2>Documentários</h2> 
             <div id="netflixCarousel3" class="carousel slide" data-bs-interval="false" data-bs-touch="false">
               <div class="carousel-inner">
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
-                  <div class="netflix-row">
+                  <div class="netflix-row" style="margin-left: 100px;">
                     <div class="netflix-item">
                       <img src="/api/placeholder/270/180" alt="Documentário 1">
                     </div>
@@ -235,7 +251,7 @@
                 </div>
                 <!-- Slide 2 -->
                 <div class="carousel-item">
-                  <div class="netflix-row">
+                  <div class="netflix-row" style="margin-left: 100px;">
                     <div class="netflix-item">
                       <img src="/api/placeholder/270/180" alt="Documentário 8">
                     </div>
@@ -262,11 +278,9 @@
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#netflixCarousel3" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
               </button>
               <button class="carousel-control-next" type="button" data-bs-target="#netflixCarousel3" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
               </button>
             </div>
           </div>
