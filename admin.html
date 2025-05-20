@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Painel de Administrador</title>
+    <link rel="stylesheet" href="CSS/admin.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">NETFLIX</div>
+            <div class="user-info">
+                <div class="user-icon">A</div>
+                <span>Administrador</span>
+            </div>
+        </header>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar por título, ID ou gênero...">
+            <button>Buscar</button>
+        </div>
+        
+        <div class="content-section">
+            <h2>Gerenciar catálogo</h2>
+            
+            <div class="filter-options">
+                <select id="content-type">
+                    <option value="all">Todos os tipos</option>
+                    <option value="movie">Filmes</option>
+                    <option value="series">Séries</option>
+                </select>
+                
+                <select id="content-status">
+                    <option value="all">Todos os status</option>
+                    <option value="active">Ativos</option>
+                    <option value="hidden">Ocultos</option>
+                </select>
+                
+                <select id="content-genre">
+                    <option value="all">Todos os gêneros</option>
+                    <option value="action">Ação</option>
+                    <option value="comedy">Comédia</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Terror</option>
+                    <option value="scifi">Ficção Científica</option>
+                </select>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Tipo</th>
+                        <th>Gênero</th>
+                        <th>Ano</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S001</td>
+                        <td>Stranger Things</td>
+                        <td>Série</td>
+                        <td>Ficção Científica</td>
+                        <td>2016</td>
+                        <td><span class="status active">Ativo</span></td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete" onclick="showDeleteModal('Stranger Things')">Remover</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>M001</td>
+                        <td>Duna: Parte Dois</td>
+                        <td>Filme</td>
+                        <td>Ficção Científica</td>
+                        <td>2024</td>
+                        <td><span class="status active">Ativo</span></td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete" onclick="showDeleteModal('Duna: Parte Dois')">Remover</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>S002</td>
+                        <td>Squid Game</td>
+                        <td>Série</td>
+                        <td>Drama</td>
+                        <td>2021</td>
+                        <td><span class="status active">Ativo</span></td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete" onclick="showDeleteModal('Squid Game')">Remover</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>M002</td>
+                        <td>Nada de Novo no Front</td>
+                        <td>Filme</td>
+                        <td>Drama</td>
+                        <td>2022</td>
+                        <td><span class="status active">Ativo</span></td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete" onclick="showDeleteModal('Nada de Novo no Front')">Remover</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>M003</td>
+                        <td>Alerta Vermelho</td>
+                        <td>Filme</td>
+                        <td>Ação</td>
+                        <td>2021</td>
+                        <td><span class="status active">Ativo</span></td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete" onclick="showDeleteModal('Alerta Vermelho')">Remover</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>S003</td>
+                        <td>The Witcher</td>
+                        <td>Série</td>
+                        <td>Fantasia</td>
+                        <td>2019</td>
+                        <td><span class="status hidden">Oculto</span></td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete" onclick="showDeleteModal('The Witcher')">Remover</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="pagination">
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="confirmation-modal" id="deleteModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Confirmar remoção</h3>
+                <button class="close-modal" onclick="hideDeleteModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Tem certeza que deseja remover <span id="deleteItemName"></span> do catálogo? Esta ação não pode ser desfeita.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-cancel" onclick="hideDeleteModal()">Cancelar</button>
+                <button class="btn btn-confirm" onclick="removeContent()">Confirmar remoção</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">
+        Conteúdo removido com sucesso!
+    </div>
+    
+    <script>
+        function showDeleteModal(itemName) {
+            document.getElementById('deleteModal').style.display = 'flex';
+            document.getElementById('deleteItemName').textContent = itemName;
+        }
+        
+        function hideDeleteModal() {
+            document.getElementById('deleteModal').style.display = 'none';
+        }
+        
+        function removeContent() {
+            // Aqui seria implementada a lógica real de remoção
+            // Simulando remoção:
+            let itemName = document.getElementById('deleteItemName').textContent;
+            
+            // Encontrar o item na tabela e removê-lo
+            let rows = document.querySelectorAll('tbody tr');
+            rows.forEach(row => {
+                if (row.querySelector('td:nth-child(2)').textContent === itemName) {
+                    row.remove();
+                }
+            });
+            
+            // Esconder modal e mostrar notificação
+            hideDeleteModal();
+            showNotification();
+        }
+        
+        function showNotification() {
+            const notification = document.getElementById('notification');
+            notification.style.display = 'block';
+            
+            // Esconder a notificação após 3 segundos
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

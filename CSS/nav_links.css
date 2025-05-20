@@ -25,7 +25,7 @@ body {
     }
         
         #navbar.scrolled {
-            background-color: #141414;
+            background-color: #f9f3f3de;
         }
         
         .navbar-brand {
@@ -37,6 +37,8 @@ body {
         
         .navbar-collapse {
             justify-content: center;
+            
+
         }
         
         .navbar-nav {
@@ -61,18 +63,17 @@ body {
         
         .d-flex {
             display: flex;
-            align-items: center;
-    
+            align-items: center;    
         }
         
         
     .form-control::placeholder {
-        color: #0a0000;
+        color: #bcb3b3;
     }
         
     .navbar-toggler {
-        border-color: rgba(255, 255, 255, 0.159) !important;
-        text-shadow: #757575;
+        border-color: rgba(255, 255, 255, 0.951) !important;
+        text-shadow: #ffededed;
     }
     
     
@@ -174,7 +175,6 @@ body {
     }
     
 
-        /* Estilos para os carrosséis */
         .netflix-carousel {
             padding: 20px 0;
             position: relative;
@@ -191,11 +191,10 @@ body {
             padding: 5px 0;
         }
         
-        /* Aqui está a mudança para deixar as imagens mais esticadas como banners */
         .netflix-item {
             flex: 0 0 auto;
             width: 370px;
-            height: 200px; /* Altura reduzida para parecer mais com banner */
+            height: 200px; 
             margin-right: 5px;
             transition: transform 0.3s ease;
             overflow: hidden;
@@ -205,7 +204,7 @@ body {
         .netflix-item img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Isso fará com que a imagem cubra todo o espaço disponível */
+            object-fit: cover; 
         }
         
         .netflix-item:hover {
@@ -213,7 +212,6 @@ body {
             z-index: 2;
         }
         
-        /* Estilos para os controles do carrossel */
         .carousel-control-next, .carousel-control-prev {
             width: 5%;
             background-color: rgba(0, 0, 0, 0.3);
@@ -224,7 +222,6 @@ body {
             filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
         }
         
-        /* Estilo para o Footer */
         .footer {
             padding: 40px;
             margin-top: 40px;
@@ -248,85 +245,7 @@ body {
             color: #757575;
             font-size: 0.8rem;
         }
-        
-        /* Estilo para o perfil */
-        .profile {
-            width: 32px;
-            height: 32px;
-            border-radius: 4px;
-        }
     
-    
-      
-.hero {
-    position: relative;
-    height: 80vh;
-    margin-bottom: 20px;
-    padding-top: 70px;
-}
-
-
-.hero-image::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    background: linear-gradient(to top, #141414 0%, transparent 50%),
-                linear-gradient(to bottom, #141414 0%, transparent 20%),
-                linear-gradient(to right, #141414 0%, transparent 30%);
-    }
-
-.hero-info {
-    color: #fff;
-    position: absolute;
-    bottom: 15%;
-    left: 4%;
-    width: 40%;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.265);
-        
-}
-
-.hero-info h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.hero-info h2 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    font-weight: normal;
-    line-height: 1.5;
-    color: #e5e5e5;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.play-btn, .info-btn {
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: all 0.2s;
-    border: none;
-}
-
-.play-btn {
-    background-color: #fff;
-    color: #000;
-}
-
-.play-btn:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-
           
           .carousel-control-prev {
             left: 0;
@@ -341,66 +260,7 @@ body {
             opacity: 1;
           }
           
-          .carousel-control-prev-icon,
-          .carousel-control-next-icon {
-            width: 30px;
-            height: 30px;
-          }
-          
-          .carousel-item {
-            transition: transform 0.6s ease-in-out;
-          }
 
-          
-          /* Para evitar que as imagens encostem nas bordas */
-          .container-fluid {
-            max-width: 95%;
-          }
-        
-        .footer {
-            padding: 50px 4%;
-            margin-top: 50px;
-            background-color: #141414;
-            color: #757575;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .social-links a img {
-            width: 24px;
-            height: 24px;
-            transition: opacity 0.3s;
-        }
-
-        .social-links a:hover img {
-            opacity: 0.7;
-        }
-
-        .footer-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px 30px;
-            margin-bottom: 30px;
-        }
-
-        .footer-links a {
-            color: #757575;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-
-        .copyright {
-            font-size: 0.8rem;
-            color: #757575;
-        }
 
         /* Responsividade */
         @media (max-width: 1200px) {
