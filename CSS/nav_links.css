@@ -1,3 +1,18 @@
+.page-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+  }
+  
+  .page-container.hidden {
+    opacity: 0;
+  }
+
 body {
     background-color: #141414 !important;
     color: #fff !important; 
